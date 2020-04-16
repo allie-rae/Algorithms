@@ -31,7 +31,21 @@ Run the test file by executing `python test_recipe_batches.py`.
 
 You can also test your implementation manually by executing `python recipe_batches.py`.
 
-## Hints
+## Hints 
 
  * If there's a dictionary operation you aren't sure of how to perform in Python, look it up!
  * What's the _minimum_ number of loops we need to perform in order to write a working implementation?
+
+ # Function needs to check how many ingredients are needed
+ # Function needs to check how many ingredients are on hand
+ # Function needs to check how many batches of a given recipe can be made with the ingredients on hand
+
+ # Q: How can the code check for multiples of items? 
+
+ We have 10 eggs. We need 3 eggs per batch. 
+ `on hand items` divided by `needed items per batch`
+ 10 / 3 = 3.333
+ `Round down` to 3 (math.floor)
+ `We can make 3 batches`
+
+ Each item in the recipe will have to go through the division process and the smallest number of batches will be stored and returned 
